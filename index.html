@@ -1,0 +1,94 @@
+<!-- contact-form.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="contact-form-container">
+      <!-- Form Section -->
+      <div class="contact-form">
+        <div class="form-header">
+          <h1>
+            Let’s eat healthy food and
+            <span>stay fit.</span>
+          </h1>
+
+          <p class="form-description">
+            Send what you eat, and get your fitness plan.
+          </p>
+        </div>
+        <form class="form">
+          <div class="custom-form-names-section">
+            <label for="">
+              First Name
+              <input
+                type="text"
+                name="name"
+                placeholder="e.g. Will"
+                class="input-field"
+                required
+              />
+            </label>
+
+            <label for="">
+              Last Name
+              <input
+                type="text"
+                name="name"
+                placeholder="e.g. Smith"
+                class="input-field"
+                required
+              />
+            </label>
+          </div>
+
+          <label for="">
+            Email
+            <input
+              type="email"
+              name="email"
+              placeholder="you@mail.com"
+              class="input-field"
+              required
+            />
+          </label>
+          <label for="">
+            Message
+            <textarea
+              name="message"
+              placeholder="Include a message..."
+              rows="4"
+              class="textarea-field"
+              required
+            ></textarea>
+          </label>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="agree" name="agree" class="checkbox" />
+            <label for="agree" class="checkbox-label">
+              You agree to our <a href="#">privacy policy</a>.
+            </label>
+          </div>
+          <div class="'submit-button-container'">
+            <button type="submit" class="submit-button">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Image Section (Hidden on Mobile) -->
+      <div class="image-section">
+        <img src="unsplash.jpg" alt="Contact Us" class="contact-image" />
+      </div>
+    </div>
+  </body>
+</html>
